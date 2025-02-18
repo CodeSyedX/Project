@@ -1,0 +1,156 @@
+/* google font - popping*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+    }
+
+
+
+    body{
+        height:100vh;
+        width:100%;
+        display:flex;
+        align-items: center;
+        background: linear-gradient(135deg ,#ff919e,#f6416c 100%);
+
+    }
+    body::before,  
+    body::after{
+        content:'';
+        position:absolute;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        opacity: 0.4;
+       }
+
+    body::before{
+        clip-path:circle(30% at left 20%);
+        background: linear-gradient(135deg,#f6416c 10% , #ff9a9e 100%);
+    }   
+
+
+    body::after{
+        clip-path:circle(25% at right 80%);
+        background: linear-gradient(135deg,#f6416c 10% , #ff9a9e 100%);
+    }   
+header{
+    height:85vh;
+    width: 90%;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    margin:auto ;
+    border-radius: 25px;
+    box-shadow: 0 20px  50px rgba(0,0,0,0.15);
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5);
+
+}
+
+header .navbar{
+  width:100%;
+  display:flex;
+  padding:35px 50px;
+  justify-content: space-between;
+}
+
+
+header .navbar .logo a{
+  font-size: 22px;
+  font-weight: 500;
+  color:#000;
+  text-decoration: none;
+}
+
+
+header .navbar .menu{
+  display:flex;
+}
+
+.navbar .menu li{
+  list-style: none;
+  margin: 0 6px;
+}
+
+.navbar .menu a{
+  text-decoration: none;
+  color:#000;
+  font-size: 17px;
+  font-weight: 500;
+  transition:all 0.3s ease ;
+  
+}
+
+.navbar .menu a:hover{
+  color:#f2f2f2;
+}
+
+.navbar .button input{
+  color:#f2f2f2;
+  outline:none;
+  font-size: 17px;
+font-weight: 500;
+padding: 6px 12px ;
+margin: 0 8px;
+border-radius: 12px;
+border: none;
+cursor: pointer;
+transition: all 0.3s ease;
+background: linear-gradient(135deg,#f6416c 10% , #ff9a9e 100%);
+border-color: #f2f2f2;
+
+}
+
+.navbar .button input:hover{
+  transform: scale(0.97);
+}
+
+.text-content{
+  width:40%;
+  margin:100px 0 0 50px;
+
+}
+
+.text-content h2{
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.text-content p{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+
+
+

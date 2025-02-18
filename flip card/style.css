@@ -1,0 +1,130 @@
+/* google font - popping*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+
+}
+html,body{
+    display:grid;
+    height:100%;
+    place-items: center;
+    background: linear-gradient(375deg ,#1cc7d0 ,#2ede98);
+
+
+}
+
+.wrapper{
+    height:400px;
+    width:320px;
+    position:relative;
+    transform-style: preserve-3d;
+    perspective: 10000px;
+}
+
+.wrapper .card{
+    height:100%;
+    width:100%;
+    position:absolute;
+    background: #fff;
+    border-radius: 10px;
+    transform: rotateY(0deg);
+    padding: 5px;
+    transform-style: preserve-3d;
+    transition: 0.7s cubic-bezier(0.4,0.2,0.2,1);
+
+}
+.wrapper:hover> .front{
+    transform:rotateY(-180deg) ;
+}
+.wrapper .card img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.wrapper .back{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+
+
+}
+
+.wrapper:hover> .back{
+    transform:rotateY(0deg) ;
+}
+
+.wrapper .back img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(375deg ,#1cc7d0 ,#2ede98);
+}
+
+.wrapper .back .info{
+    text-align: center;
+}
+
+.wrapper .back .info .title{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.back ul{
+    display:flex;
+
+}
+
+.back ul a{
+    display:block;
+    height:40px;
+    width:40px;
+    background: rgb(0, 255, 242);
+    text-align: center;
+    border: 2px solid transparent;
+    line-height: 38px;
+    margin:0 5px;
+    border-radius: 50%;
+    color: #fff;
+    ;
+}
+
+.back ul a:hover{
+    background:none;
+    border-color: #1cc7d0;
+    color: #1cc7d0;
+}
