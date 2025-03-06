@@ -26,6 +26,7 @@ To run this project locally on your computer, follow these steps:
 
 2. Navigate to the project directory:
    ```bash
-cd project-name
+   cd project-name
+
 
 3. Open the index.html file in your web browser to see the project in action.
